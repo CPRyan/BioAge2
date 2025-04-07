@@ -3,13 +3,19 @@
 
 # BioAge
 
-This package measures biological aging using data from the National
+This package is an upgraded version of the BioAge package, 
+designed to improve flexibility of implementation.
+Additional waves of data will be incorporated at a later date.
+
+The original package measures biological aging using data from the National
 Health and Nutrition Examination Survey (NHANES). The package uses
 published biomarker algorithms to calculate three biological aging
 measures: Klemera-Doubal Method (KDM) biological age, phenotypic age,
 and homeostatic dysregulation.
 
-**Citing the package**
+
+
+**Citing the original package**
 
 Kwon, D., Belsky, D.W. A toolkit for quantification of biological age
 from blood chemistry and organ function test data: BioAge. GeroScience
@@ -18,11 +24,11 @@ from blood chemistry and organ function test data: BioAge. GeroScience
 ## Installation (via devtools):
 
 You can install the released version of BioAge from
-(<https://github.com/dayoonkwon/BioAge>) with:
+(<https://github.com/CPRyan/BioAge2>) with:
 
 ``` r
 install.packages("devtools")
-devtools::install_github("dayoonkwon/BioAge")
+devtools::install_github("CPRyan/BioAge")
 ```
 
 ## Example
@@ -35,7 +41,7 @@ dataset `NHANES3` and `NHANES4`. The original KDM bioage and phenoage
 values are saved as `kdm0` and `phenoage0` as part of NHANES dataset.
 
 ``` r
-library(BioAge) #topic of example
+library(BioAge2) #topic of example
 library(dplyr)
 ```
 
